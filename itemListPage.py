@@ -3,7 +3,8 @@ import requests
 import singleItemPage
 
 
-def getItemPageUrls(url):
+def getItemPageUrls(sub_category1, url):
+
     sub_category_href_list = []
     baseUrl = url
     pageUrls = [url]
@@ -38,6 +39,7 @@ def getItemPageUrls(url):
                 detail_text = strong_name.find_next_sibling()
 
 
+                data['Sub Category'] = sub_category1
                 data['Name'] = name
 
                 key = strong_name.strong.text.strip()

@@ -2,8 +2,9 @@ import singleItemPage
 import itemListPage
 
 if __name__ == '__main__':
-    url = 'https://rainbowpages.lk/advertising/advertising-neon/'
-    itemListPage.getItemPageUrls(url)
+    url = 'https://rainbowpages.lk/advertising/'
+    # itemListPage.getItemPageUrls(url)
+    singleItemPage.loadCategories(url)
 
 
 # from bs4 import BeautifulSoup as bs
