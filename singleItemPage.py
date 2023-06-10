@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import itemListPage
+import csv
 
 def loadCategories(url):
 
@@ -14,6 +15,8 @@ def loadCategories(url):
         sub_category_name = sub_category.find('a').text.strip()
 
         itemListPage.getItemPageUrls(sub_category_name, sub_category_href)
+
+
 
 
 
