@@ -1,10 +1,18 @@
 import singleItemPage
 import itemListPage
 
+
+
 if __name__ == '__main__':
-    url = 'https://rainbowpages.lk/advertising/'
-    # itemListPage.getItemPageUrls(url)
-    singleItemPage.loadCategories(url)
+
+    # client = MongoClient()  # Connect to the default MongoDB server
+    # db = client['rainbowpages']  # Get a database named 'rainbowpages'
+    # collection = db['advertising']  # Get a collection named 'data'
+    url = 'https://rainbowpages.lk/constructions/'
+    category = "constructions"
+    singleItemPage.scrapeData(category, url)
+
+
 
 
 # from bs4 import BeautifulSoup as bs

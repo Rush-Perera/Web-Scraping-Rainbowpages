@@ -3,7 +3,7 @@ import requests
 import itemListPage
 import csv
 
-def loadCategories(url):
+def scrapeData(category, url):
 
     soup = bs(requests.get(url).text, 'html.parser')
 
@@ -14,7 +14,7 @@ def loadCategories(url):
 
         sub_category_name = sub_category.find('a').text.strip()
 
-        itemListPage.getItemPageUrls(sub_category_name, sub_category_href)
+        itemListPage.getItemDetails(category, sub_category_name, sub_category_href)
 
 
 
