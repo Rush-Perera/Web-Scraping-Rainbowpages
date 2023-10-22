@@ -8,7 +8,7 @@ import csv
 
 client = MongoClient()  # Connect to the default MongoDB server
 db = client['rainbowpages']  # Get a database named 'rainbowpages'
-collection = db['constructions']  # Get a collection named 'data'
+collection = db['interior']  # Get a collection named 'data'
 
 
 def getItemDetails(category, sub_category1, url):

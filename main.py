@@ -8,8 +8,8 @@ if __name__ == '__main__':
     # client = MongoClient()  # Connect to the default MongoDB server
     # db = client['rainbowpages']  # Get a database named 'rainbowpages'
     # collection = db['advertising']  # Get a collection named 'data'
-    url = 'https://rainbowpages.lk/constructions/'
-    category = "constructions"
+    url = 'https://rainbowpages.lk/interior/'
+    category = "Interior"
     singleItemPage.scrapeData(category, url)
 
 
